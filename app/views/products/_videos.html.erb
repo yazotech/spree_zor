@@ -1,0 +1,11 @@
+<% 
+unless @product_properties.empty? 
+  for product_property in @product_properties 
+    song_url = product_property.value
+  	if song_url && song_url.to_s.slice(0,6) == '<embed' %>
+  	<%= raw song_url %>
+    <% else %>
+    [<%= song_url.to_s %>]
+  <% end 
+  end
+end%>

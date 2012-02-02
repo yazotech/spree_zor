@@ -4,5 +4,6 @@ Rails.application.routes.draw do
       match '/zixun' => 'zixun#index'
       match '/about/zxls' => 'about#zxlspage'
       match '/about/product_center' => 'about#product_center'
+      match '/products/vdpage' => 'products#vdpage'
      
 end
